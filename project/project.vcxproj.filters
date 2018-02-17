@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Engine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\guicon.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Component.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ActionList.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Transform.cpp">
+      <Filter>Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Temporary.cpp" />
+    <ClCompile Include="..\src\Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Camera.cpp">
+      <Filter>Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry.cpp">
+      <Filter>Graphics\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Joint.cpp">
+      <Filter>Graphics\Joint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Material.cpp">
+      <Filter>Graphics\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Mesh.cpp">
+      <Filter>Graphics\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Model.cpp">
+      <Filter>Graphics\Components\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RenderNode.cpp">
+      <Filter>Graphics\RenderNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Shader.cpp">
+      <Filter>Graphics\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\shader_utils.cpp">
+      <Filter>Graphics\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Texture.cpp">
+      <Filter>Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Effect.cpp">
+      <Filter>Graphics\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShaderVariableTypes.cpp">
+      <Filter>Graphics\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RunningAverage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\n8time.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DebugDraw.cpp">
+      <Filter>Graphics\DebugDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GraphicsErrors.cpp">
+      <Filter>Graphics\Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Graphics.cpp">
+      <Filter>Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ProcessingTree.cpp">
+      <Filter>Graphics\Components\ProcessingTree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MatrixStack.cpp">
+      <Filter>Math\MatrixStack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Engine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\debug.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\guicon.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\n8time.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Component.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Temporary.h" />
+    <ClInclude Include="..\src\ActionList.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Transform.h">
+      <Filter>Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Camera.h">
+      <Filter>Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Geometry.h">
+      <Filter>Graphics\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Joint.h">
+      <Filter>Graphics\Joint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Material.h">
+      <Filter>Graphics\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Mesh.h">
+      <Filter>Graphics\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model.h">
+      <Filter>Graphics\Components\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RenderNode.h">
+      <Filter>Graphics\RenderNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Shader.h">
+      <Filter>Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\shader_utils.h">
+      <Filter>Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShaderVariableTypes.h">
+      <Filter>Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Texture.h">
+      <Filter>Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Effect.h">
+      <Filter>Graphics\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RunningAverage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Singleton.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DebugDraw.h">
+      <Filter>Graphics\DebugDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GraphicsErrors.h">
+      <Filter>Graphics\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Graphics.h">
+      <Filter>Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ProcessingTree.h">
+      <Filter>Graphics\Components\ProcessingTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MatrixStack.h">
+      <Filter>Math\MatrixStack</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{17438206-6b01-4abe-828b-1d47d385ef68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{8233b3a7-acb4-40d6-b71c-3eed49d16559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{30d31367-366b-4f1c-9b70-597d8598068c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transform">
+      <UniqueIdentifier>{51f2679c-c564-40cb-8cdb-31d1dd6c6f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{940637fa-a8fe-4f89-a963-68b63cd8486e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Camera">
+      <UniqueIdentifier>{5d7cfc30-96f8-4d4c-bb91-301c02503d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Geometry">
+      <UniqueIdentifier>{9b4e229b-64a7-4da0-a05e-dc01a3843e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Joint">
+      <UniqueIdentifier>{caa4a8c0-8db9-447b-a651-969eca0cc054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Material">
+      <UniqueIdentifier>{b769ec30-625e-4d42-ab60-62a8dde41610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Mesh">
+      <UniqueIdentifier>{bcfd64f5-6b21-40ee-9bfa-bf415c7934ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\RenderNode">
+      <UniqueIdentifier>{91b343a5-8070-4873-a670-0adfbfc4ba24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Shader">
+      <UniqueIdentifier>{024278ae-5094-4a87-b8f2-8d11d57c1783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Texture">
+      <UniqueIdentifier>{70eac062-dca2-472d-ba8e-88d9d149960b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Effect">
+      <UniqueIdentifier>{666a6674-484b-49e6-a5c4-14e63445930b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{0427b49c-b642-4f92-a907-f82ad530d2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{115588bd-b66f-4396-ba18-62e3afa679b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\DebugDraw">
+      <UniqueIdentifier>{69cde1e4-d175-4a9e-9dbe-ca5aba4da667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\System">
+      <UniqueIdentifier>{c3a347a7-7fb9-4aa4-bc59-7875ad469bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Errors">
+      <UniqueIdentifier>{45ba15a0-1c55-4e4f-a0eb-9b043387991e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Components">
+      <UniqueIdentifier>{d7dcaa3c-187c-4c6c-82ed-edac96cd81d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Components\Model">
+      <UniqueIdentifier>{f8a0ba67-2970-4652-a8f1-d66936fc2783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Components\ProcessingTree">
+      <UniqueIdentifier>{27aef86a-37f0-478d-b537-3438c6cc2088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\MatrixStack">
+      <UniqueIdentifier>{5e1ec219-35c5-456c-94ce-a7fba899a160}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\shaders\pos_tex_mvp_bones.v.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\pos_mvp.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\pos_mvp.v.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\pos_tex_mvp.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\pos_tex_mvp.v.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\composite.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\fullscreenquad.v.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\gaussBlurH.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\gaussBlurV.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\pos_mvp_bones.v.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\resources\shaders\red.f.txt">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+varying vec2 f_texcoord;
+
+uniform sampler2D mytexture;
+
+void main(void)
+{
+  //gl_FragColor = vec4(1,0,0,1);
+
+
+  vec4 result = texture2D(mytexture, f_texcoord);
+  result.r += 0.05;
+  
+  gl_FragColor = result;
+}

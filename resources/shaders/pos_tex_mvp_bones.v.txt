@@ -1,0 +1,26 @@
+attribute vec3 coord3d;
+attribute vec2 texcoord;
+attribute ivec4 boneIds;     // default value is 0
+attribute vec4 boneWeights; // default value is 0
+
+const int MAX_BONES = 28;
+
+uniform mat4 mvp;
+uniform mat4 boneMatrixes[MAX_BONES];
+
+// texture coordinates
+varying vec2 f_texcoord;
+
+void main(void)
+{
+
+  mat4 boneTransform = boneWeights[0] * boneMatrixes[boneIds[0]];
+  boneTransform += boneWeights[1] * boneMatrixes[boneIds[1]];
+  boneTransform += boneWeights[2] * boneMatrixes[boneIds[2]];
+  boneTransform += boneWeights[3] * boneMatrixes[boneIds[3]];
+
+  gl_Position = mvp * boneTransform * vec4(coord3d, 1.0);
+  // should i set gl_position.w = 1?
+
+  f_texcoord = texcoord;
+}

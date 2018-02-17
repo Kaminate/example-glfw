@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C24B2811-CDD4-4892-AC8D-85F76EC71135}</ProjectGuid>
+    <RootNamespace>project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>GLFW.lib;GLFWDLL.lib;opengl32.lib;assimpD.lib;freeglut_static.lib;glew32s.lib;SOIL.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>GLFW.lib;GLFWDLL.lib;opengl32.lib;assimp.lib;freeglut_static.lib;glew32s.lib;SOIL.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ActionList.cpp" />
+    <ClCompile Include="..\src\Camera.cpp" />
+    <ClCompile Include="..\src\Component.cpp" />
+    <ClCompile Include="..\src\DebugDraw.cpp" />
+    <ClCompile Include="..\src\Effect.cpp" />
+    <ClCompile Include="..\src\Engine.cpp" />
+    <ClCompile Include="..\src\GameObject.cpp" />
+    <ClCompile Include="..\src\Geometry.cpp" />
+    <ClCompile Include="..\src\Graphics.cpp" />
+    <ClCompile Include="..\src\GraphicsErrors.cpp" />
+    <ClCompile Include="..\src\guicon.cpp" />
+    <ClCompile Include="..\src\Input.cpp" />
+    <ClCompile Include="..\src\Joint.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Material.cpp" />
+    <ClCompile Include="..\src\Math.cpp" />
+    <ClCompile Include="..\src\MatrixStack.cpp" />
+    <ClCompile Include="..\src\Mesh.cpp" />
+    <ClCompile Include="..\src\Model.cpp" />
+    <ClCompile Include="..\src\n8time.cpp" />
+    <ClCompile Include="..\src\ProcessingTree.cpp" />
+    <ClCompile Include="..\src\RenderNode.cpp" />
+    <ClCompile Include="..\src\RunningAverage.cpp" />
+    <ClCompile Include="..\src\Shader.cpp" />
+    <ClCompile Include="..\src\ShaderVariableTypes.cpp" />
+    <ClCompile Include="..\src\shader_utils.cpp" />
+    <ClCompile Include="..\src\Temporary.cpp" />
+    <ClCompile Include="..\src\Texture.cpp" />
+    <ClCompile Include="..\src\Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\ActionList.h" />
+    <ClInclude Include="..\src\Camera.h" />
+    <ClInclude Include="..\src\Component.h" />
+    <ClInclude Include="..\src\debug.h" />
+    <ClInclude Include="..\src\DebugDraw.h" />
+    <ClInclude Include="..\src\Effect.h" />
+    <ClInclude Include="..\src\Engine.h" />
+    <ClInclude Include="..\src\GameObject.h" />
+    <ClInclude Include="..\src\Geometry.h" />
+    <ClInclude Include="..\src\Graphics.h" />
+    <ClInclude Include="..\src\GraphicsErrors.h" />
+    <ClInclude Include="..\src\guicon.h" />
+    <ClInclude Include="..\src\Input.h" />
+    <ClInclude Include="..\src\Joint.h" />
+    <ClInclude Include="..\src\Material.h" />
+    <ClInclude Include="..\src\Math.h" />
+    <ClInclude Include="..\src\MatrixStack.h" />
+    <ClInclude Include="..\src\Mesh.h" />
+    <ClInclude Include="..\src\Model.h" />
+    <ClInclude Include="..\src\n8time.h" />
+    <ClInclude Include="..\src\ProcessingTree.h" />
+    <ClInclude Include="..\src\RenderNode.h" />
+    <ClInclude Include="..\src\RunningAverage.h" />
+    <ClInclude Include="..\src\Shader.h" />
+    <ClInclude Include="..\src\ShaderVariableTypes.h" />
+    <ClInclude Include="..\src\shader_utils.h" />
+    <ClInclude Include="..\src\Singleton.h" />
+    <ClInclude Include="..\src\System.h" />
+    <ClInclude Include="..\src\Temporary.h" />
+    <ClInclude Include="..\src\Texture.h" />
+    <ClInclude Include="..\src\Transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\shaders\composite.f.txt" />
+    <None Include="..\resources\shaders\fullscreenquad.v.txt" />
+    <None Include="..\resources\shaders\gaussBlurH.f.txt" />
+    <None Include="..\resources\shaders\gaussBlurV.f.txt" />
+    <None Include="..\resources\shaders\pos_mvp.f.txt" />
+    <None Include="..\resources\shaders\pos_mvp.v.txt" />
+    <None Include="..\resources\shaders\pos_mvp_bones.v.txt" />
+    <None Include="..\resources\shaders\pos_tex_mvp.f.txt" />
+    <None Include="..\resources\shaders\pos_tex_mvp.v.txt" />
+    <None Include="..\resources\shaders\pos_tex_mvp_bones.v.txt" />
+    <None Include="..\resources\shaders\red.f.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

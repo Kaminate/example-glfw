@@ -1,0 +1,11 @@
+varying vec2 f_texcoord;
+
+uniform sampler2D mytexture;
+uniform float blendFactor;
+void main(void)
+{
+  vec4 result = texture2D(mytexture, f_texcoord);
+  result *= blendFactor;
+  gl_FragColor = result;
+  //gl_FragColor = vec4(f_texcoord, 1 + result.x * 0.00001,1);
+}
